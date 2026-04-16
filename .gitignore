@@ -1,0 +1,60 @@
+# ==============================================
+# MATLAB .gitignore - English Version
+# Ignore unnecessary files for MATLAB projects
+# ==============================================
+
+# 1. Editor temporary/backup files
+*.asv
+*.m~
+*.asv~
+*.m.bak
+*.m.backup
+
+# 2. Data/result files 
+*.mat
+*.fig
+*.mlx
+*.mlapp
+*.prj
+*.slx
+*.sldd
+*.sfx
+*.mdl
+*.mdl~
+*.slx~
+
+# 3. Compiled/Binary files
+*.mex*
+*.p
+*.mexa64
+*.mexmaci64
+*.mexw64
+*.mexglx
+*.exe
+*.dll
+*.so
+*.dylib
+
+# 4. Log/output/system junk files
+*.log
+*.txt
+*.out
+*.err
+*.tmp
+*.temp
+*.cache
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 5. Workspace/configuration files
+matlab.mat
+*.history
+*.pref
+*.settings
+
+# 6. Archives/large files
+*.zip
+*.rar
+*.7z
+*.tar.gz
