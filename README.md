@@ -22,17 +22,12 @@ This project is distributed under the MIT License, the full license text is avai
 
 4. Repository Structure & File Description
    
-This repository is organized into modular, non-compacted files (no .zip/.rar/.7z archives) for full transparency and reusability. All code comments are written in English.
-
-Folder/File	Description
-/AWOASA	Core implementation of the proposed AWOASA (Adaptive Weighted Whale Optimization Algorithm with Simulated Annealing)
-/AWOASA_and_AWOASA_NoEq13	AWOASA algorithm with ablation variant (removal of random hunting mechanism) for sensitivity analysis
-/AWOASA_dynamic_tracking_detection	Dynamic moving magnetic target tracking implementation of AWOASA
-/WOA	Standard Whale Optimization Algorithm (baseline for comparison)
-/WOA_DW	WOA with only dynamic weighting strategy (ablation study variant)
-/WOA_SA	WOA with only simulated annealing mechanism (ablation study variant)
-/CWOA, /LWOA, /PSO, /GWO, /HHO	State-of-the-art comparison algorithms used in the paper
-/Gaussian_White_Noise	Code for adding Gaussian white noise to simulate real magnetic measurement environments
-/Multi-Source_Interference_Mode	Code for multi-source electromagnetic interference robustness test
-README.md	This documentation file
-.gitignore	Standard git ignore file for MATLAB project temporary files
+| Folder/File | Description |
+|-------------|-------------|
+| `/AWOASA` | Core implementation of the proposed AWOASA algorithm<br>Adaptive Weighted WOA with Dynamic Weighting & Simulated Annealing |
+| `/WOA` | Standard Whale Optimization Algorithm (baseline for comparison) |
+| `/WOA_DW` | WOA variant with dynamic weighting only (for ablation study) |
+| `/WOA_SA` | WOA variant with simulated annealing only (for ablation study) |
+| `/CWOA`, `/LWOA`, `/PSO`, `/GWO`, `/HHO` | State-of-the-art comparison algorithms used in the paper |
+| `/Gaussian_White_Noise` | Code for simulating real magnetic measurement environments with Gaussian white noise |
+| `/Multi-Source_Interference_Mode` | Code for robustness test under multi-source electromagnetic interference |
