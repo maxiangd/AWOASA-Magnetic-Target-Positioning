@@ -63,54 +63,54 @@ This project is distributed under the MIT License, the full license text is avai
    
    This section provides step-by-step tutorials to reproduce the core experimental results of the paper.
    
-   5.1 Reproduce Benchmark Function Test Results
-   
-      1.Navigate to the /AWOASA folder.
-   
-      2.Open the script main.m.
-   
-      3.Set the experimental parameters (consistent with the paper):
-
-         Population size N = 30
-
-         Maximum iterations T_max = 500
-
-         50 independent runs for statistical significance
-
-      4.Run the script. The output will include:
-   
-         Mean and standard deviation of the fitness values for all 16 benchmark functions
-   
-         Convergence curve plots
-   
-   5.2 Reproduce Magnetic Target Positioning Results
-   
-      1.Navigate to the /Gaussian_White_Noise or /Multi-Source_Interference_Mode folder.
-   
-      2.Open the script WOA_main or AWOASA_main.m.
-   
-      3.The script automatically loads the real-world magnetic target dataset from Harbin field tests (included in the repository).
+      5.1 Reproduce Benchmark Function Test Results
       
-      4.Set the experimental parameters (consistent with the paper):
-   
-         Population size N = 50
-         
-         Maximum iterations T_max = 1000
-         
-         Search space bounds for 6 target parameters (position: x/y/z, magnetic moment: Mx/My/Mz)
-         
-      5.Run the script. The output will include:
+         1.Navigate to the /AWOASA folder.
       
-         Static positioning error of AWOASA vs. standard WOA
+         2.Open the script main.m.
+      
+         3.Set the experimental parameters (consistent with the paper):
+   
+            Population size N = 30
+   
+            Maximum iterations T_max = 500
+   
+            50 independent runs for statistical significance
+   
+         4.Run the script. The output will include:
+      
+            Mean and standard deviation of the fitness values for all 16 benchmark functions
+      
+            Convergence curve plots
+      
+      5.2 Reproduce Magnetic Target Positioning Results
+      
+         1.Navigate to the /Gaussian_White_Noise or /Multi-Source_Interference_Mode folder.
+      
+         2.Open the script WOA_main or AWOASA_main.m.
+      
+         3.The script automatically loads the real-world magnetic target dataset from Harbin field tests (included in the repository).
          
-         Probability distribution plots of estimated target parameters
-
-   5.3 Reproduce Ablation Study & Sensitivity Analysis
+         4.Set the experimental parameters (consistent with the paper):
+      
+            Population size N = 50
+            
+            Maximum iterations T_max = 1000
+            
+            Search space bounds for 6 target parameters (position: x/y/z, magnetic moment: Mx/My/Mz)
+            
+         5.Run the script. The output will include:
+         
+            Static positioning error of AWOASA vs. standard WOA
+            
+            Probability distribution plots of estimated target parameters
    
-      1.For ablation study: Run scripts in /WOA_DW and /WOA_SA folders with the same benchmark function settings.
-   
-      2.For sensitivity analysis: Run scripts in /AWOASA_and_AWOASA_NoEq13 folder to test the impact of the random hunting mechanism and key parameters.
-   
+      5.3 Reproduce Ablation Study & Sensitivity Analysis
+      
+         1.For ablation study: Run scripts in /WOA_DW and /WOA_SA folders with the same benchmark function settings.
+      
+         2.For sensitivity analysis: Run scripts in /AWOASA_and_AWOASA_NoEq13 folder to test the impact of the random hunting mechanism and key parameters.
+      
 6. User Guide: Inputs, Outputs, Options & Expected Behaviour
       
    6.1 Core Inputs
