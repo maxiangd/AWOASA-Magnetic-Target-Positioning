@@ -9,17 +9,18 @@ This project is distributed under the MIT License, the full license text is avai
 
    2.1 Software Dependencies
 
-MATLAB R2024a or later versions
-No additional third-party toolboxes are required; all code uses MATLAB built-in functions only
+      MATLAB R2024a or later versions
+      No additional third-party toolboxes are required; all code uses MATLAB built-in functions only
 
    2.2 Minimum Computational Requirements
 
-CPU: Intel Core i5 12th Gen (12600KF) @ 3.70 GHz or equivalent AMD processor
-RAM: ≥ 16.0 GB
+      CPU: Intel Core i5 12th Gen (12600KF) @ 3.70 GHz or equivalent AMD processor
+   
+      RAM: ≥ 16.0 GB
 
-Operating System: Windows 10/11 or Linux/macOS compatible with MATLAB R2024a
+      Operating System: Windows 10/11 or Linux/macOS compatible with MATLAB R2024a
 
-3. Repository Structure & File Description
+4. Repository Structure & File Description
    
 This repository is organized into modular, non-compacted files (no .zip/.rar/.7z archives) for full transparency and reusability. All code comments are written in English.
 
