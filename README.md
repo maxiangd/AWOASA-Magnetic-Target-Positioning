@@ -115,37 +115,37 @@ This project is distributed under the MIT License, the full license text is avai
       
    6.1 Core Inputs
    
-   | Input Parameter | Description |
-|----------------|-------------|
-| N | Population size (number of search agents) |
-| T_max | Maximum number of iterations |
-| lb | Lower bound of the search space for each dimension |
-| ub | Upper bound of the search space for each dimension |
-| dim | Dimension of the optimization problem |
-| fitness | Handle of the objective (fitness) function to be minimized |
+     | Input Parameter | Description |
+   |----------------|-------------|
+   | N | Population size (number of search agents) |
+   | T_max | Maximum number of iterations |
+   | lb | Lower bound of the search space for each dimension |
+   | ub | Upper bound of the search space for each dimension |
+   | dim | Dimension of the optimization problem |
+   | fitness | Handle of the objective (fitness) function to be minimized |
 
    6.2 Core Outputs
 
-   | Output Variable | Description | Expected Behaviour |
-|----------------|-------------|---------------------|
-| X_best | Optimal solution vector (minimizing the fitness function) | For benchmark functions, converges to the theoretical global optimum; for magnetic positioning, returns the 6 target parameters (x,y,z,Mx,My,Mz) |
-| fitness_best | Fitness value of the optimal solution | Decreases monotonically as iterations increase, converging to a stable minimum |
-| convergence_curve | Fitness value of the best solution at each iteration | For AWOASA, converges significantly faster than standard WOA and other comparison algorithms |
+    | Output Variable | Description | Expected Behaviour |
+   |----------------|-------------|---------------------|
+   | X_best | Optimal solution vector (minimizing the fitness function) | For benchmark functions, converges to the theoretical global optimum; for magnetic positioning, returns the 6 target parameters (x,y,z,Mx,My,Mz) |
+   | fitness_best | Fitness value of the optimal solution | Decreases monotonically as iterations increase, converging to a stable minimum |
+   | convergence_curve | Fitness value of the best solution at each iteration | For AWOASA, converges significantly faster than standard WOA and other comparison algorithms |
 
    6.3 Optional Configurations
 
-| Option | Description | Usage Scenario |
-|--------|-------------|----------------|
-| Adaptive initial temperature for SA | Set initial temperature as the difference between max and min initial fitness values | Default setting, optimal for most geophysical inversion problems |
-| Fixed initial temperature for SA | Set fixed T=100 or T=1000 | Sensitivity analysis only |
-| AWOASA-NoEq13 variant | Remove the random hunting mechanism | Ablation study of the exploration capability |
-| Multi-source interference mode | Add 50Hz power line interference and motor impulsive transients | Robustness test for real-world electromagnetic environments |
+   | Option | Description | Usage Scenario |
+   |--------|-------------|----------------|
+   | Adaptive initial temperature for SA | Set initial temperature as the difference between max and min initial fitness values | Default setting, optimal for most geophysical inversion problems |
+   | Fixed initial temperature for SA | Set fixed T=100 or T=1000 | Sensitivity analysis only |
+   | AWOASA-NoEq13 variant | Remove the random hunting mechanism | Ablation study of the exploration capability |
+   | Multi-source interference mode | Add 50Hz power line interference and motor impulsive transients | Robustness test for real-world electromagnetic environments |
 
 7. Code Specification
    
    1.All code in this repository is written in MATLAB, with 100% English comments for full readability.
-
-  2. No compiled binaries, encrypted files, or single compacted archives (.zip/.rar/.7z) are included in the repository. All source code is fully visible and editable.
+   
+   2. No compiled binaries, encrypted files, or single compacted archives (.zip/.rar/.7z) are included in the repository. All source code is fully visible and editable.
 
 8. Contact
    
