@@ -7,12 +7,12 @@ This project is distributed under the MIT License, the full license text is avai
 
 2. Dependencies & Computational Requirements
 
-2.1 Software Dependencies
+   2.1 Software Dependencies
 
 MATLAB R2024a or later versions
 No additional third-party toolboxes are required; all code uses MATLAB built-in functions only
 
-2.2 Minimum Computational Requirements
+   2.2 Minimum Computational Requirements
 
 CPU: Intel Core i5 12th Gen (12600KF) @ 3.70 GHz or equivalent AMD processor
 RAM: ≥ 16.0 GB
