@@ -14,6 +14,7 @@ This project is distributed under the MIT License, the full license text is avai
    2.1 Software Dependencies
 
       MATLAB R2024a or later versions
+   
       No additional third-party toolboxes are required; all code uses MATLAB built-in functions only
 
    2.2 Minimum Computational Requirements
@@ -65,11 +66,11 @@ This project is distributed under the MIT License, the full license text is avai
    
       5.1 Reproduce Benchmark Function Test Results
       
-         1.Navigate to the /AWOASA folder.
+         1. Navigate to the /AWOASA folder.
       
-         2.Open the script main.m.
+         2. Open the script main.m.
       
-         3.Set the experimental parameters (consistent with the paper):
+         3. Set the experimental parameters (consistent with the paper):
    
             Population size N = 30
    
@@ -77,21 +78,21 @@ This project is distributed under the MIT License, the full license text is avai
    
             50 independent runs for statistical significance
    
-         4.Run the script. The output will include:
+         4. Run the script. The output will include:
       
             Mean and standard deviation of the fitness values for all 16 benchmark functions
       
             Convergence curve plots
       
-      5.2 Reproduce Magnetic Target Positioning Results
+      5.2  Reproduce Magnetic Target Positioning Results
       
-         1.Navigate to the /Gaussian_White_Noise or /Multi-Source_Interference_Mode folder.
+         1. Navigate to the /Gaussian_White_Noise or /Multi-Source_Interference_Mode folder.
       
-         2.Open the script WOA_main or AWOASA_main.m.
+         2. Open the script WOA_main or AWOASA_main.m.
       
-         3.The script automatically loads the real-world magnetic target dataset from Harbin field tests (included in the repository).
+         3. The script automatically loads the real-world magnetic target dataset from Harbin field tests (included in the repository).
          
-         4.Set the experimental parameters (consistent with the paper):
+         4. Set the experimental parameters (consistent with the paper):
       
             Population size N = 50
             
@@ -99,7 +100,7 @@ This project is distributed under the MIT License, the full license text is avai
             
             Search space bounds for 6 target parameters (position: x/y/z, magnetic moment: Mx/My/Mz)
             
-         5.Run the script. The output will include:
+         5. Run the script. The output will include:
          
             Static positioning error of AWOASA vs. standard WOA
             
@@ -107,9 +108,9 @@ This project is distributed under the MIT License, the full license text is avai
    
       5.3 Reproduce Ablation Study & Sensitivity Analysis
       
-         1.For ablation study: Run scripts in /WOA_DW and /WOA_SA folders with the same benchmark function settings.
+         1. For ablation study: Run scripts in /WOA_DW and /WOA_SA folders with the same benchmark function settings.
       
-         2.For sensitivity analysis: Run scripts in /AWOASA_and_AWOASA_NoEq13 folder to test the impact of the random hunting mechanism and key parameters.
+         2. For sensitivity analysis: Run scripts in /AWOASA_and_AWOASA_NoEq13 folder to test the impact of the random hunting mechanism and key parameters.
       
 6. User Guide: Inputs, Outputs, Options & Expected Behaviour
       
@@ -143,7 +144,7 @@ This project is distributed under the MIT License, the full license text is avai
 
 7. Code Specification
    
-   1.All code in this repository is written in MATLAB, with 100% English comments for full readability.
+   1. All code in this repository is written in MATLAB, with 100% English comments for full readability.
    
    2. No compiled binaries, encrypted files, or single compacted archives (.zip/.rar/.7z) are included in the repository. All source code is fully visible and editable.
 
@@ -151,9 +152,9 @@ This project is distributed under the MIT License, the full license text is avai
    
    For questions about the code or paper, please contact:
    
-      1.Corresponding Author: Tao Shi
+      1. Corresponding Author: Tao Shi
    
-      2.Email: shitao@qau.edu.cn
+      2. Email: shitao@qau.edu.cn
    
-      3.Affiliation: College of Science and Information, Qingdao Agricultural University, Qingdao, China
+      3. Affiliation: College of Science and Information, Qingdao Agricultural University, Qingdao, China
 
