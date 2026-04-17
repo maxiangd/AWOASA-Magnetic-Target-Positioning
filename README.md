@@ -7,23 +7,23 @@ inversion: Application to magnetic target positioning, submitted to Computers & 
 
 1. License
    
-This project is distributed under the MIT License, the full license text is available in the LICENSE file in this repository.
+   This project is distributed under the MIT License, the full license text is available in the LICENSE file in this repository.
 
 2. Dependencies & Computational Requirements
 
    2.1 Software Dependencies
 
-      MATLAB R2024a or later versions
-   
-      No additional third-party toolboxes are required; all code uses MATLAB built-in functions only
+         MATLAB R2024a or later versions
+      
+         No additional third-party toolboxes are required; all code uses MATLAB built-in functions only
 
    2.2 Minimum Computational Requirements
 
-      CPU: Intel Core i5 12th Gen (12600KF) @ 3.70 GHz or equivalent AMD processor
+         CPU: Intel Core i5 12th Gen (12600KF) @ 3.70 GHz or equivalent AMD processor
+      
+         RAM: ≥ 16.0 GB
    
-      RAM: ≥ 16.0 GB
-
-      Operating System: Windows 10/11 or Linux/macOS compatible with MATLAB R2024a
+         Operating System: Windows 10/11 or Linux/macOS compatible with MATLAB R2024a
 
 3. Repository Structure & File Description
 
@@ -47,10 +47,10 @@ This project is distributed under the MIT License, the full license text is avai
 
    4.1 Installation
    
-      1.Clone this repository to your local machine
+         1.Clone this repository to your local machine
+         
+         2.Open MATLAB, and set the repository root folder as your MATLAB working directory.
       
-      2.Open MATLAB, and set the repository root folder as your MATLAB working directory.
-   
    4.2 Basic Usage
    
       To run the core AWOASA algorithm for a custom optimization problem:
