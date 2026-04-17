@@ -53,65 +53,65 @@ This project is distributed under the MIT License, the full license text is avai
    
    4.2 Basic Usage
    
-   To run the core AWOASA algorithm for a custom optimization problem:
-   
-      1.Define your objective function (fitness function) in a MATLAB .m file.
-   
-      2.Set the algorithm parameters (population size, maximum iterations, search bounds) in the main script.
-   
-      3.Run the AWOASA main function to get the optimal solution.
-   
+      To run the core AWOASA algorithm for a custom optimization problem:
+      
+         1.Define your objective function (fitness function) in a MATLAB .m file.
+      
+         2.Set the algorithm parameters (population size, maximum iterations, search bounds) in the main script.
+      
+         3.Run the AWOASA main function to get the optimal solution.
+      
 6. How-To: Reproduce Main Results in the Paper
    
    This section provides step-by-step tutorials to reproduce the core experimental results of the paper.
    
       5.1 Reproduce Benchmark Function Test Results
       
-         1. Navigate to the /AWOASA folder.
+            1. Navigate to the /AWOASA folder.
+         
+            2. Open the script main.m.
+         
+            3. Set the experimental parameters (consistent with the paper):
       
-         2. Open the script main.m.
+               Population size N = 30
       
-         3. Set the experimental parameters (consistent with the paper):
-   
-            Population size N = 30
-   
-            Maximum iterations T_max = 500
-   
-            50 independent runs for statistical significance
-   
-         4. Run the script. The output will include:
+               Maximum iterations T_max = 500
       
-            Mean and standard deviation of the fitness values for all 16 benchmark functions
+               50 independent runs for statistical significance
       
-            Convergence curve plots
-      
+            4. Run the script. The output will include:
+         
+               Mean and standard deviation of the fitness values for all 16 benchmark functions
+         
+               Convergence curve plots
+         
       5.2  Reproduce Magnetic Target Positioning Results
       
-         1. Navigate to the /Gaussian_White_Noise or /Multi-Source_Interference_Mode folder.
-      
-         2. Open the script WOA_main or AWOASA_main.m.
-      
-         3. The script automatically loads the real-world magnetic target dataset from Harbin field tests (included in the repository).
+            1. Navigate to the /Gaussian_White_Noise or /Multi-Source_Interference_Mode folder.
          
-         4. Set the experimental parameters (consistent with the paper):
-      
-            Population size N = 50
-            
-            Maximum iterations T_max = 1000
-            
-            Search space bounds for 6 target parameters (position: x/y/z, magnetic moment: Mx/My/Mz)
-            
-         5. Run the script. The output will include:
+            2. Open the script WOA_main or AWOASA_main.m.
          
-            Static positioning error of AWOASA vs. standard WOA
+            3. The script automatically loads the real-world magnetic target dataset from Harbin field tests (included in the repository).
             
-            Probability distribution plots of estimated target parameters
-   
+            4. Set the experimental parameters (consistent with the paper):
+         
+               Population size N = 50
+               
+               Maximum iterations T_max = 1000
+               
+               Search space bounds for 6 target parameters (position: x/y/z, magnetic moment: Mx/My/Mz)
+               
+            5. Run the script. The output will include:
+            
+               Static positioning error of AWOASA vs. standard WOA
+               
+               Probability distribution plots of estimated target parameters
+      
       5.3 Reproduce Ablation Study & Sensitivity Analysis
       
-         1. For ablation study: Run scripts in /WOA_DW and /WOA_SA folders with the same benchmark function settings.
-      
-         2. For sensitivity analysis: Run scripts in /AWOASA_and_AWOASA_NoEq13 folder to test the impact of the random hunting mechanism and key parameters.
+            1. For ablation study: Run scripts in /WOA_DW and /WOA_SA folders with the same benchmark function settings.
+         
+            2. For sensitivity analysis: Run scripts in /AWOASA_and_AWOASA_NoEq13 folder to test the impact of the random hunting mechanism and key parameters.
       
 7. User Guide: Inputs, Outputs, Options & Expected Behaviour
       
