@@ -46,6 +46,7 @@ This project is distributed under the MIT License, the full license text is avai
 4. Installation & Basic Usage Instructions
 
    4.1 Installation
+   
       1.Clone this repository to your local machine
       
       2.Open MATLAB, and set the repository root folder as your MATLAB working directory.
@@ -60,7 +61,7 @@ This project is distributed under the MIT License, the full license text is avai
    
       3.Run the AWOASA main function to get the optimal solution.
    
-5. How-To: Reproduce Main Results in the Paper
+6. How-To: Reproduce Main Results in the Paper
    
    This section provides step-by-step tutorials to reproduce the core experimental results of the paper.
    
@@ -112,7 +113,7 @@ This project is distributed under the MIT License, the full license text is avai
       
          2. For sensitivity analysis: Run scripts in /AWOASA_and_AWOASA_NoEq13 folder to test the impact of the random hunting mechanism and key parameters.
       
-6. User Guide: Inputs, Outputs, Options & Expected Behaviour
+7. User Guide: Inputs, Outputs, Options & Expected Behaviour
       
    6.1 Core Inputs
    
@@ -142,13 +143,13 @@ This project is distributed under the MIT License, the full license text is avai
    | AWOASA-NoEq13 variant | Remove the random hunting mechanism | Ablation study of the exploration capability |
    | Multi-source interference mode | Add 50Hz power line interference and motor impulsive transients | Robustness test for real-world electromagnetic environments |
 
-7. Code Specification
+8. Code Specification
    
    1. All code in this repository is written in MATLAB, with 100% English comments for full readability.
    
    2. No compiled binaries, encrypted files, or single compacted archives (.zip/.rar/.7z) are included in the repository. All source code is fully visible and editable.
 
-8. Contact
+9. Contact
    
    For questions about the code or paper, please contact:
    
