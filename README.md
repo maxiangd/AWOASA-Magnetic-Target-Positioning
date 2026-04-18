@@ -120,6 +120,6 @@ To run the core AWOASA algorithm for a custom optimization problem:
 
 ## 8. Contact
 For questions about the code or paper, please contact:
-- Corresponding Author: Xiangdong Ma
+- Author: Xiangdong Ma
 - Email: xiangdongma_181@stu.qau.edu.cn
 - Affiliation: College of Science and Information, Qingdao Agricultural University, Qingdao, China
