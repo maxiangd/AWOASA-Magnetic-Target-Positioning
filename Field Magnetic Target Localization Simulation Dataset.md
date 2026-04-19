@@ -1,4 +1,4 @@
-# Field Magnetic Target Localization Dataset
+# Field Magnetic Target Localization Simulation Dataset
 ## For AWOASA Algorithm Practical Validation
 
 ---
