@@ -41,7 +41,7 @@ while t<Max_iter
         
     end
     
-    w=t^3/Max_iter^3; %%权重系数,文献中用的权重系数,这个权重系数效果更好
+    w=t^3/Max_iter^3; % Weight coefficient used in the literature with better performance
     a=2-(1.9*t/Max_iter); % a decreases linearly fron 2 to 0 in Eq. (2.3)
     
     % a2 linearly dicreases from -1 to -2 to calculate t in Eq. (3.12)
@@ -85,28 +85,29 @@ while t<Max_iter
             
         end
     end
-     % ===================== SA退温操作 =====================
-    %  生成新位置
+
+    % ===================== Simulated Annealing Cooling Operation =====================
+    % Generate new positions
     Positions_new=initialization(SearchAgents_no,dim,ub,lb);
 
-    %  Metropolis接受准则
+    % Metropolis acceptance criterion
     for i=1:size(Positions,1)
-        % 计算新旧位置适应度
+        % Calculate fitness of new and current positions
         fitness_new=fobj(Positions_new(i,:));
         fitness=fobj(Positions(i,:));
-        % 计算接受概率（参考代码公式）
+        % Calculate acceptance probability (reference formula)
         pp=exp(-(fitness_new-fitness)/T); 
-        % 判断是否接受新位置
-        if fitness_new<fitness % 新解更优直接接受
+        % Judge whether to accept the new position
+        if fitness_new<fitness % Accept directly if new solution is better
             Positions(i,:)=Positions_new(i,:);
-        elseif rand()<=pp % 新解更差按概率接受
+        elseif rand()<=pp % Accept with probability if new solution is worse
             Positions(i,:)=Positions_new(i,:);
         else
             Positions(i,:)=Positions(i,:);
         end
     end
 
-    %  SA退温
+    % SA temperature cooling
     T=T*0.99;
     % ======================================================================
     t=t+1;
