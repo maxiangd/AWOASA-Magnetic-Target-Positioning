@@ -56,7 +56,7 @@ This repository is organized into modular, non-compacted files (no `.zip`/`.rar`
 
 ### 4.2 Basic Usage
 To run the AWOASA algorithm on a custom optimization problem:
-1. Define your objective function (fitness function) in a MATLAB `.m` file.
+1. Define your objective function (fitness function) in a main `.m` file.
 2. Set algorithm parameters (population size, maximum iterations, bounds) in the main script.
 3. Run the AWOASA main function/script to obtain the optimal solution.
 
