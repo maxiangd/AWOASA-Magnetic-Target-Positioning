@@ -63,7 +63,7 @@ while t<Max_iter
                     rand_leader_index = floor(SearchAgents_no*rand()+1);
                     X_rand = Positions(rand_leader_index, :);
                     D_X_rand=abs(C*X_rand(j)-Positions(i,j));
-                    Positions(i,j)=w*X_rand(j)-A*D_X_rand;
+                    % Positions(i,j)=w*X_rand(j)-A*D_X_rand;
                     
                 elseif abs(A)<1
                     D_Leader=abs(C*Leader_pos(j)-Positions(i,j));
